@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #ffe259, #ffa751);
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.wrapper{
+  max-width: 800px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.dog-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+.dog-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.dog-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dog-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+#error-container{
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
